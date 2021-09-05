@@ -1,0 +1,23 @@
+# Using functions
+def month_days(month, days):
+    days = (days)
+    print(month + " has " + str(days) + " days.")
+month_days("June", 30)
+month_days("July", 31)
+
+#Writing readable codes
+def rectangle_area(base, height):
+    area = (base * height) 
+    print("The area is " + str(area))
+rectangle_area(12, 23)
+
+#distance calculations
+def my_trip_km(miles):
+	km = miles * 1.6 
+	print("The distance in kilometers is " + str(km))
+my_trip_km(55)
+
+def my_trip_km(miles):
+	km = miles * 1.6 
+	print("The round-trip in kilometers is " + str(km*2))
+my_trip_km(55)
