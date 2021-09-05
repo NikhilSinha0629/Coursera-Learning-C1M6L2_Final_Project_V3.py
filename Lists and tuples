@@ -1,0 +1,38 @@
+def skip_elements(elements):
+   new_list = []
+   i = 0
+   for words in elements:
+     if i <= len(elements):
+       new_list.append(elements[i])
+       i += 2
+     return new_list
+print(skip_elements(["a", "b", "c", "d", "e", "f", "g"])) 
+print(skip_elements(['Orange', 'Pineapple', 'Strawberry', 'Kiwi', 'Peach'])) 
+print(skip_elements([]))
+####################################
+def file_size(file_info):
+	name, type, size= file_info
+	return(name,type,"{:.2f}".format(size / 1024))
+
+print(file_size(("Class Assignment", "docx", 17875))) # Should print 17.46
+print(file_size(("Notes", "txt", 496))) # Should print 0.48
+print(file_size(("Program", "py", 1239))) # Should print 1.21
+####################################
+multiples = []
+for x in range(11):
+  multiples.append(x*7)
+
+print (multiples)
+####################################
+multiples = [x for x in range(101) if x%3==0]
+print(multiples)
+####################################
+filenames = ["program.c", "stdio.hpp", "sample.hpp", "a.out", "math.hpp", "hpp.out"]
+newfilenames = []
+
+for names in filenames:
+    if names.endswith(".hpp"):
+     newfilenames.append(names.replace(".hpp",".h"))
+    else:
+      newfilenames.append(names)
+print(newfilenames) 
