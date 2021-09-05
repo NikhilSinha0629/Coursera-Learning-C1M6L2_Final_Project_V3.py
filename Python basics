@@ -1,0 +1,38 @@
+for i in range(1):
+    print("This is fun!")
+name = "John Doe"
+print("Hey " + name)
+print(2 + 3)
+
+#Conversion of Data Types
+
+total = 2048 + 4357 + 97658 + 125 + 8
+files = 5
+average = total / files
+print("The average size is:" + str(average))
+
+#Defining Functions
+
+#Example: The function that shows total seconds when given the hours, minutes and seconds as input.
+
+
+def print_seconds(hours, minutes, seconds):
+    print(hours * 3600 + minutes * 60 + seconds)
+
+
+print_seconds(1, 2, 3)
+
+#Returing values example
+
+
+#Use the get_seconds function to work out the amount of seconds in 2 hours and 30 minutes, then add this number to the amount of seconds in 45 minutes and 15 seconds. Then print the result.
+def get_seconds(hours, minutes, seconds):
+    return 3600 * hours + 60 * minutes + seconds
+
+
+amount_a = get_seconds(2, 30, 0)
+amount_b = get_seconds(0, 45, 15)
+result = ("The total number of seconds is:" + str(amount_a + amount_b))
+print(result)
+
+print(amount_a if amount_a >> amount_b else amount_b)
