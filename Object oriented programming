@@ -1,0 +1,7 @@
+class Apple:
+  colour = ""
+  taste = ""
+foodie = Apple()
+foodie.colour="green"
+foodie.taste="sour"
+foodie.taste.upper[0:1].lower[1:]
