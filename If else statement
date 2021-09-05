@@ -1,0 +1,60 @@
+#############################
+#Comparison operators
+#a == b: a is equal to b
+
+#a != b: a is different than b
+
+#a < b: a is smaller than b
+
+#a <= b: a is smaller or equal to b
+
+#a > b: a is bigger than b
+
+#a >= b: a is bigger or equal to b
+
+#Logical operators
+#a and b: True if both a and b are True. False otherwise.
+
+#a or b: True if either a or b or both are True. False if both are False.
+
+#not a: True if a is False, False if a is True.
+#############################
+#Comparision and if-else statements
+#############################
+#A company decided to give bonus of 5% to employee if his/her year of service is more than 5 years.Ask user for their salary and year of service and print the net bonus amount.
+print ("Please enter your salary:")
+salary = eval(input())
+print ("Please enter your years of service:")
+yos = eval(input())
+if yos>=5:
+  print ("Your Bonus is: ", (0.05*salary))
+  print("Your total Salary is: ",salary+0.05*salary)
+else:
+  print ("You are not eligible for bonus")
+#############################
+#Take values of length and breadth of a rectangle from user and check if it is square or not.  
+
+print("Enter the Length of Quadrilateral: ")
+length = eval(input())
+print("Enter the width of Quadrilateral: ")
+width = eval(input())
+if length == width:
+  print("The figure is a square.")
+else:
+  print("Quadrilateral is not square.")
+#######################################################################
+def calculate_storage(filesize):
+    block_size = 4096
+   
+    full_blocks = (filesize)//(block_size)
+    
+    partial_block_remainder = 4096%(filesize)
+   
+    if partial_block_remainder > 0:
+        return 4096*(full_blocks+1)
+    return full_blocks
+
+print(calculate_storage(1))    # Should be 4096
+print(calculate_storage(4096)) # Should be 4096
+print(calculate_storage(4097)) # Should be 8192
+print(calculate_storage(6000)) # Should be 8192
